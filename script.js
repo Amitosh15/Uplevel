@@ -1,10 +1,6 @@
 'use strict';
 
-
-
-/**
- * add eventListener on multiple elements
- */
+/** add eventListener on multiple elements */
 
 const addEventOnElements = function (elements, eventType, callback) {
   for (let i = 0, len = elements.length; i < len; i++) {
@@ -13,10 +9,7 @@ const addEventOnElements = function (elements, eventType, callback) {
 }
 
 
-
-/**
- * PRELOADER
- */
+/* PRELOADER */
 
 const preloader = document.querySelector("[data-preloader]");
 const circle = document.querySelector("[data-circle]");
@@ -28,11 +21,7 @@ window.addEventListener("load", function () {
 });
 
 
-
-/**
- * NAVBAR TOGGLER FOR MOBILE
- */
-
+/* NAVBAR TOGGLER FOR MOBILE */
 const navbar = document.querySelector("[data-navbar]");
 const navTogglers = document.querySelectorAll("[data-nav-toggler]");
 const overlay = document.querySelector("[data-overlay]");
@@ -46,10 +35,7 @@ const toggleNavbar = function () {
 addEventOnElements(navTogglers, "click", toggleNavbar);
 
 
-
-/**
- * HEADER
- * 
+/* HEADER
  * add active class on header when window scroll down to 100px
  */
 

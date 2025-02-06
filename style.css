@@ -1,9 +1,7 @@
 /* Custom property */
 :root {
 
-  /**
-   * colors
-   */
+   /* colors */
 
   --selective-yellow: hsl(42, 100%, 56%);
   --roman-silver: hsl(240, 6%, 51%);
@@ -31,31 +29,24 @@
   --fw-600: 600;
   --fw-700: 700;
 
-  /**
-   * spacing
-   */
+   /** spacing */
+  
 
   --section-padding: 56px;
 
-  /**
-   * box shadow
-   */
+  /** box shadow */
 
   --shadow-1: 0px 35px 65px -10px hsla(0, 0%, 0%, 0.05);
   --shadow-2: 0 10px 40px hsla(0, 0%, 0%, 0.06);
 
-  /**
-   * border radius
-   */
+  /** border radius */
 
   --radius-4: 4px;
   --radius-6: 6px;
   --radius-8: 8px;
   --radius-circle: 50%;
 
-  /**
-   * transition
-   */
+  /** transition */
 
   --transition: 0.25s ease;
   --cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
@@ -64,13 +55,7 @@
 }
 
 
-
-
-
-/*-----------------------------------*\
-  #RESET
-\*-----------------------------------*/
-
+/** #RESET */
 *,
 *::before,
 *::after {
@@ -121,12 +106,7 @@ body.nav-active { overflow: hidden; }
 
 
 
-
-
-/*-----------------------------------*\
-  #REUSED STYLE
-\*-----------------------------------*/
-
+/** #REUSED STYLE */
 .container { padding-inline: 16px; }
 
 .headline-lg,
@@ -267,12 +247,7 @@ body.nav-active { overflow: hidden; }
 
 
 
-
-
-/*-----------------------------------*\
-  #PRELOADER
-\*-----------------------------------*/
-
+/** #PRELOADER */
 .preloader {
   position: fixed;
   top: 0;
@@ -306,12 +281,7 @@ body.nav-active { overflow: hidden; }
 }
 
 
-
-
-
-/*-----------------------------------*\
-  #HEADER
-\*-----------------------------------*/
+ /** #HEADER */
 
 .header .btn { display: none; }
 
@@ -398,12 +368,7 @@ body.nav-active { overflow: hidden; }
 
 
 
-
-
-/*-----------------------------------*\
-  #HERO
-\*-----------------------------------*/
-
+/** #HERO */
 .hero-banner { display: none; }
 
 .hero { padding-block-start: calc(var(--pt, 96px) + var(--section-padding)); }
@@ -430,12 +395,7 @@ body.nav-active { overflow: hidden; }
 
 
 
-
-
-/*-----------------------------------*\
-  #CATEGORY
-\*-----------------------------------*/
-
+/** #CATEGORY */
 .category .grid-list { padding-block: 40px 52px; }
 
 .category-card {
@@ -453,12 +413,7 @@ body.nav-active { overflow: hidden; }
 
 
 
-
-
-/*-----------------------------------*\
-  #ABOUT
-\*-----------------------------------*/
-
+/** #ABOUT */
 .about .container {
   display: grid;
   gap: 30px;
@@ -506,12 +461,7 @@ body.nav-active { overflow: hidden; }
 
 
 
-
-
-/*-----------------------------------*\
-  #COURSE
-\*-----------------------------------*/
-
+/** #COURSE */
 .course .grid-list { padding-block: 20px 44px; }
 
 .course-card {
@@ -557,12 +507,7 @@ body.nav-active { overflow: hidden; }
 
 
 
-
-
-/*-----------------------------------*\
-  #CTA
-\*-----------------------------------*/
-
+/** #CTA */
 .cta {
   background-color: var(--keppei);
   padding: 48px 24px;
@@ -575,12 +520,7 @@ body.nav-active { overflow: hidden; }
 
 
 
-
-
-/*-----------------------------------*\
-  #FOOTER
-\*-----------------------------------*/
-
+/** #FOOTER */
 .footer-top .container {
   display: grid;
   gap: 24px;
@@ -614,16 +554,9 @@ body.nav-active { overflow: hidden; }
 
 
 
+/** #CONTAINER QUERIES */
 
-
-/*-----------------------------------*\
-  #CONTAINER QUERIES
-\*-----------------------------------*/
-
-/**
- * container query for card
- */
-
+/** container query for card */
 .card-container { container-type: inline-size; }
 
 @container (min-width: 500px) {
@@ -639,22 +572,13 @@ body.nav-active { overflow: hidden; }
 
 
 
+/** #MEDIA QUERIES */
 
-
-/*-----------------------------------*\
-  #MEDIA QUERIES
-\*-----------------------------------*/
-
-/**
- * responsive for large than 575px screen
- */
+/** responsive for large than 575px screen */
 
 @media (min-width: 575px) {
 
-  /**
-   * REUSED STYLE
-   */
-
+  /** REUSED STYLE */
   .container {
     max-width: 640px;
     width: 100%;
@@ -664,99 +588,57 @@ body.nav-active { overflow: hidden; }
   .card { padding: 32px; }
 
 
-
-  /**
-   * FOOTER
-   */
-
+  /** FOOTER */
   .footer-top .container { grid-template-columns: 1fr 1fr; }
 
 }
 
 
-
-
-
-/**
- * responsive for large than 768px screen
- */
+/** responsive for large than 768px screen */
 
 @media (min-width: 768px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
+  /** CUSTOM PROPERTY */
 
   :root {
-    
-    /**
-     * typography
-     */
-
+    /** typography */
     --headline-lg: 6rem;
     --headline-md: 3.8rem;
 
-    /**
-     * spacing
-     */
-
+    /** spacing */
     --section-padding: 80px;
 
   }
 
 
-
-  /**
-   * REUSED STYLE
-   */
-
+  /** REUSED STYLE */
   .container { max-width: 768px; }
 
   .grid-list { grid-template-columns: 1fr 1fr; }
 
 
-
-  /**
-   * CTA
-   */
-
+  /** CTA */
   .cta { padding-block: 78px; }
 
 }
 
 
-
-
-
-/**
- * responsive for large than 992px screen
- */
+/** responsive for large than 992px screen */
 
 @media (min-width: 992px) {
 
   :root {
-
-    /**
-     * typography
-     */
-
+    /** typography */
     --headline-lg: 7.7rem;
     --headline-md: 4.4rem;
 
-    /**
-     * spacing
-     */
-
+    /** spacing */
     --section-padding: 120px;
 
   }
 
 
-
-  /**
-   * REUSED STYLE
-   */
-
+  /** REUSED STYLE */
   .container { max-width: 1024px; }
 
   .btn {
@@ -765,11 +647,7 @@ body.nav-active { overflow: hidden; }
   }
 
 
-
-  /**
-   * HEADER
-   */
-
+  /** HEADER */
   .nav-open-btn,
   .overlay,
   .navbar-top { display: none; }
@@ -795,27 +673,15 @@ body.nav-active { overflow: hidden; }
   }
 
 
-
-  /**
-   * CATEGORY
-   */
-
+  /** CATEGORY */
   .grid-list { grid-template-columns: repeat(3, 1fr); }
 
 
-
-  /**
-   * ABOUT
-   */
-
+  /** ABOUT */
   .about .container { grid-template-columns: 1fr 1fr; }
 
 
-
-  /**
-   * COURSE
-   */
-
+  /** COURSE */
   .course .grid-list {
     grid-template-columns: 1fr 1fr;
     margin-block: 40px 48px;
@@ -823,10 +689,7 @@ body.nav-active { overflow: hidden; }
 
 
 
-  /**
-   * FOOTER
-   */
-
+  /** FOOTER */
   .footer-top .container { grid-template-columns: 1fr 0.5fr 0.5fr 0.8fr; }
 
   .footer-brand { padding-inline-end: 24px; }
@@ -834,27 +697,17 @@ body.nav-active { overflow: hidden; }
 }
 
 
-
-
-
-/**
- * responsive for large than 1200px screen
- */
+/** responsive for large than 1200px screen */
 
 @media (min-width: 1200px) {
 
-  /**
-   * REUSED STYE
-   */
 
+  /** REUSED STYE */
   .container { max-width: 1170px; }
 
 
 
-  /**
-   * HERO
-   */
-
+  /** HERO */
   .hero-banner {
     display: block;
     max-width: max-content;
@@ -871,18 +724,12 @@ body.nav-active { overflow: hidden; }
 
 
 
-  /**
-   * ABOUT
-   */
-
+  /** ABOUT */
   .about .container { grid-template-columns: 1fr 0.7fr; }
 
 
 
-  /**
-   * CTA
-   */
-
+  /** CTA */
   .cta { text-align: left; }
 
   .cta .container {
@@ -897,10 +744,7 @@ body.nav-active { overflow: hidden; }
 
 
 
-  /**
-   * FOOTER
-   */
-
+  /** FOOTER */
   .footer .container { gap: 48px; }
 
 }
